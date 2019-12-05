@@ -89,7 +89,7 @@ class Result(BaseModel):
 
     @staticmethod
     def delete_all_from_league(league):
-        Result.delete().where(Result.league == league)
+        Result.delete().where(Result.league == league).execute()
 
     def total_points(self):
         final_score = (self.round_one_score + self.playoff_result.total_points(self.team)) / 2. \

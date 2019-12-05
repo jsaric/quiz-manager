@@ -52,4 +52,5 @@ class LeaguesOverview(QAbstractTableModel):
     def refresh(self):
         self._load_data()
         self._init_headers()
+        self.layoutChanged.emit()
 
