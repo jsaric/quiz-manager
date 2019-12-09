@@ -1,5 +1,4 @@
 from PyQt5.QtWidgets import QMainWindow, QTableView, QHeaderView
-
 from models.league_results import LeagueResults
 
 
@@ -10,7 +9,6 @@ class LeagueOverviewWindow(QMainWindow):
         self.table_view = QTableView()
         self.table_view.setModel(LeagueResults(league))
         self.setCentralWidget(self.table_view)
-        self.table_view.show()
         self.table_view.resizeColumnsToContents()
         self.table_view.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.table_view.setSortingEnabled(True)

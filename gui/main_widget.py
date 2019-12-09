@@ -3,13 +3,14 @@ from PyQt5 import Qt, QtCore
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QHeaderView
 
+from gui.new_round_window import NewRoundWindow
 from gui.overview_window import LeagueOverviewWindow
 from config import *
 from db.models import *
-from gui.dialogs import DialogWithDisablingOptions
+from gui.custom_widgets import DialogWithDisablingOptions
 
 
-class StartWidget(QtWidgets.QWidget):
+class MainWidget(QtWidgets.QWidget):
     def __init__(self, parent, model):
         super().__init__(parent)
         self.layout = QtWidgets.QHBoxLayout(self)
@@ -28,13 +29,17 @@ class StartWidget(QtWidgets.QWidget):
         self.button_layout.addWidget(self.new_league_button)
         self.new_league_button.clicked.connect(self.on_new_league)
 
+        self.new_round_button = QtWidgets.QPushButton("New round", self)
+        self.button_layout.addWidget(self.new_round_button)
+        self.new_round_button.clicked.connect(self.on_new_round)
+
         self.del_button = QtWidgets.QPushButton("Delete league", self)
         self.button_layout.addWidget(self.del_button)
         self.del_button.clicked.connect(self.on_delete)
 
-        self.load_button = QtWidgets.QPushButton("Load league", self)
-        self.button_layout.addWidget(self.load_button)
-        self.load_button.clicked.connect(self.on_load)
+        self.results_overview_button = QtWidgets.QPushButton("Results overview", self)
+        self.button_layout.addWidget(self.results_overview_button)
+        self.results_overview_button.clicked.connect(self.on_load)
 
         self.quit_button = QtWidgets.QPushButton("Quit", self)
         self.button_layout.addWidget(self.quit_button)
@@ -89,3 +94,8 @@ class StartWidget(QtWidgets.QWidget):
             league = League.create(name=dialog.ret_str)
             league.save()
             self.league_list.model().refresh()
+
+    @pyqtSlot()
+    def on_new_round(self):
+        new_round_win = NewRoundWindow(self)
+        new_round_win.show()

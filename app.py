@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QMainWindow, QStackedWidget, QApplication, QTableVie
 from peewee import *
 from config import *
 from db.models import  *
-from gui.start_widget import StartWidget
+from gui.main_widget import MainWidget
 from models.league_results import LeagueResults
 from models.leagues_overview import LeaguesOverview
 
@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Quiz Manager")
         self.central_widget = QStackedWidget()
         self.setCentralWidget(self.central_widget)
-        self.main_widget = StartWidget(self, LeaguesOverview())
+        self.main_widget = MainWidget(self, LeaguesOverview())
         self.central_widget.addWidget(self.main_widget)
 
 

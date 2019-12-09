@@ -1,7 +1,7 @@
 from PyQt5 import QtWidgets
 from PyQt5 import Qt, QtCore
 from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QHeaderView, QDialog
+from PyQt5.QtWidgets import QHeaderView, QDialog, QWidget, QLabel, QHBoxLayout, QLineEdit, QPushButton
 
 from gui.overview_window import LeagueOverviewWindow
 from config import *
@@ -46,3 +46,48 @@ class DialogWithDisablingOptions(QDialog):
             self.accept()
         else:
             pass
+
+
+class AddItemWidget(QWidget):
+    def __init__(self, parent, label, on_add, unavailable_options=[]):
+        super().__init__(parent)
+        self.layout = QHBoxLayout()
+
+        self.label = QLabel(label)
+        self.layout.addWidget(self.label)
+
+        self.edit = QLineEdit()
+        self.edit.textChanged.connect(self.on_text_change)
+        self.edit.installEventFilter(self)
+        self.layout.addWidget(self.edit)
+
+        self.button = QPushButton("Add")
+        self.layout.addWidget(self.button)
+        self.on_add = on_add
+        self.button.clicked.connect(self.on_click)
+
+        self.unavailable_options = unavailable_options
+        self.setLayout(self.layout)
+
+    def on_click(self):
+        if self._available:
+            self.on_add(self.edit.text())
+            self.edit.clear()
+
+    def eventFilter(self, widget, event):
+        if (event.type() == QtCore.QEvent.KeyPress and
+                widget is self.edit):
+            key = event.key()
+            if key == QtCore.Qt.Key_Return or key == QtCore.Qt.Key_Enter:
+                self.button.clicked.emit()
+                return True
+        return QWidget.eventFilter(self, widget, event)
+
+    @pyqtSlot()
+    def on_text_change(self):
+        if self.edit.text().__str__() in self.unavailable_options or len(self.edit.text()) == 0:
+            self.edit.setStyleSheet("border: 1.5px solid red")
+            self._available = False
+        else:
+            self.edit.setStyleSheet("border: 1.5px solid green")
+            self._available = True
