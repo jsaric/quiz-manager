@@ -11,6 +11,7 @@ class TeamList(QAbstractListModel):
         super().__init__()
         self.league = league
         self._load_data()
+        self.all_team_names = list(map(lambda x: x.name, Team.get_all()))
         self._init_headers()
         self._added_teams = []
 
@@ -47,13 +48,17 @@ class TeamList(QAbstractListModel):
     def add_team(self, team):
         self._teams.append(team)
         self._added_teams.append(team)
+        self.all_team_names.append(team.name)
         self.layoutChanged.emit()
 
     def delete_team(self, index):
         team = self._teams.pop(index)
+        self.all_team_names.remove(team.name)
+        self._added_teams.remove(team)
         team.delete_instance()
         self.layoutChanged.emit()
 
     def delete_added_teams(self):
         for t in self._added_teams:
+            self.all_team_names.remove(t.name)
             t.delete_instance()

@@ -31,7 +31,7 @@ class TeamChooserWidget(QWidget):
         self.list_view.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
         self.list_view.customContextMenuRequested.connect(self.list_context_menu)
         self.layout.addWidget(self.list_view)
-        self.team_add = AddItemWidget(self, "New Team Name: ", self.add_team, unavailable_options=list(map(lambda x: x.name, Team.get_all())))
+        self.team_add = AddItemWidget(self, "New Team Name: ", self.add_team, unavailable_options=self.model.all_team_names)
         self.layout.addWidget(self.team_add)
 
         self.button_h_layout = QHBoxLayout()
