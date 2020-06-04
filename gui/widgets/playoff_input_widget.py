@@ -53,6 +53,8 @@ class PlayoffInputWidget(QWidget):
         self.layout().removeWidget(self.teams_left_list)
         self.teams_left_list.deleteLater()
         self.button.setText("Finish Playoff")
+        for ppm in self.model.pairs:
+            ppm.edit = True
         self.button.clicked.disconnect(self.finish_pairing)
         self.button.clicked.connect(self.finish_playoff)
 
@@ -157,7 +159,10 @@ class PlayoffPairWidget(QWidget):
         self.name_labels[team_index].setText(self.model.get_name(team_index))
         self.score_edits[team_index].setText(str(self.model.get_score(team_index)))
         self.fscore_labels[team_index].setText(str(self.model.get_final_score(team_index)))
-        self.score_edits[team_index].setDisabled(self.model.finished)
+        if not self.model.edit or self.model.finished:
+            self.score_edits[team_index].setDisabled(True)
+        else:
+            self.score_edits[team_index].setDisabled(False)
 
     def refresh(self):
         self._pull_team_info(0)

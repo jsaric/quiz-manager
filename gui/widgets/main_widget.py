@@ -41,6 +41,13 @@ class MainWidget(QtWidgets.QWidget):
         self.button_layout.addWidget(self.quit_button)
         self.quit_button.clicked.connect(self.on_quit)
 
+        self.button_layout.addStretch()
+        self.jsolutions_label = QtWidgets.QLabel("JSolutions")
+        self.jsolutions_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.button_layout.addWidget(self.jsolutions_label)
+        self.button_layout.setAlignment(QtCore.Qt.AlignTop)
+        self.button_layout.setAlignment(self.jsolutions_label, QtCore.Qt.AlignBottom)
+
         self.layout.addLayout(self.button_layout, 1)
         self.setLayout(self.layout)
 

@@ -54,6 +54,7 @@ class PlayoffPairModel(QAbstractItemModel):
         super().__init__()
         self.playoff_result = playoff_result
         self.finished = False
+        self._edit = False
 
     def set_opponent(self, team):
         self.playoff_result.team2 = team
@@ -108,4 +109,13 @@ class PlayoffPairModel(QAbstractItemModel):
 
     def finish(self):
         self.finished = True
+        self.model_changed.emit()
+
+    @property
+    def edit(self):
+        return self._edit
+
+    @edit.setter
+    def edit(self, val):
+        self._edit = val
         self.model_changed.emit()
