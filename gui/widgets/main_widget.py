@@ -1,13 +1,9 @@
 from PyQt5 import QtWidgets
-from PyQt5 import Qt, QtCore
+from PyQt5 import QtCore
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QHeaderView
-
-from gui.new_round_window import NewRoundWindow
-from gui.overview_window import LeagueOverviewWindow
-from config import *
 from db.models import *
-from gui.custom_widgets import DialogWithDisablingOptions
+from gui.widgets.custom_widgets import DialogWithDisablingOptions
 
 
 class MainWidget(QtWidgets.QWidget):
@@ -68,6 +64,7 @@ class MainWidget(QtWidgets.QWidget):
             QtWidgets.QMessageBox.warning(self, "Zero rounds error", "Zero rounds have been played in this league. "
                                                                      "Unable to show the results overview.")
         else:
+            from gui.windows import LeagueOverviewWindow
             win = LeagueOverviewWindow(league, parent=self)
             win.show()
 
@@ -97,5 +94,12 @@ class MainWidget(QtWidgets.QWidget):
 
     @pyqtSlot()
     def on_new_round(self):
-        new_round_win = NewRoundWindow(self)
+        league = self.get_selected_league()
+        if league is None:
+            return
+        from gui.windows import InputWindow
+        new_round_win = InputWindow(self, league)
         new_round_win.show()
+
+    def refresh_leagues_overview(self):
+        self.league_list.model().refresh()

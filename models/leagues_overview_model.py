@@ -6,7 +6,7 @@ from peewee import *
 import config
 
 
-class LeaguesOverview(QAbstractTableModel):
+class LeaguesOverviewModel(QAbstractTableModel):
     def __init__(self):
         super().__init__()
         self._load_data()

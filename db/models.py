@@ -39,7 +39,7 @@ class Team(BaseModel):
 
 class PlayoffResult(BaseModel):
     team1 = ForeignKeyField(Team)
-    team2 = ForeignKeyField(Team)
+    team2 = ForeignKeyField(Team, null=True)
     team1_score = IntegerField()
     team2_score = IntegerField()
     draw_score = IntegerField(null=True)
@@ -74,7 +74,7 @@ class Result(BaseModel):
     team = ForeignKeyField(Team, backref='results')
     date = DateField()
     round_one_score = IntegerField()
-    playoff_result = ForeignKeyField(PlayoffResult)
+    playoff_result = ForeignKeyField(PlayoffResult, null=True)
     final_round_score = IntegerField()
 
     @staticmethod
@@ -92,6 +92,14 @@ class Result(BaseModel):
         Result.delete().where(Result.league == league).execute()
 
     def total_points(self):
-        final_score = (self.round_one_score + self.playoff_result.total_points(self.team)) / 2. \
+        if self.playoff_result is not None:
+            final_score = (self.round_one_score + self.playoff_result.total_points(self.team)) / 2. \
                       + self.final_round_score
-        return final_score
+            return final_score
+        return 0
+
+    def first_half_points(self):
+        if self.playoff_result is not None:
+            return (self.round_one_score + self.playoff_result.total_points(self.team)) / 2.
+        else:
+            return 0.

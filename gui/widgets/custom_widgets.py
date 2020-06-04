@@ -1,11 +1,9 @@
 from PyQt5 import QtWidgets
-from PyQt5 import Qt, QtCore
+from PyQt5 import QtCore
 from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QHeaderView, QDialog, QWidget, QLabel, QHBoxLayout, QLineEdit, QPushButton
+from PyQt5.QtWidgets import QDialog, QWidget, QLabel, QHBoxLayout, QLineEdit, QPushButton, QVBoxLayout
 
-from gui.overview_window import LeagueOverviewWindow
-from config import *
-from db.models import *
+__all__ = ["DialogWithDisablingOptions", "AddItemWidget", ]
 
 
 class DialogWithDisablingOptions(QDialog):

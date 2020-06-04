@@ -2,9 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32e2eb19-ada0-43bf-991a-24f13ad1a5ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gui/widgets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/widgets/final_round_input_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/widgets/first_round_input_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/widgets/main_input_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/widgets/playoff_input_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/widgets/team_chooser_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/windows/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/windows/input_window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/windows/main_window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/base_input_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/final_round_input_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/first_round_input_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/playoff_input_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/new_round_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/new_round_window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/team_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/team_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/custom_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/widgets/custom_widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/main_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/widgets/main_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/new_round_window.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/overview_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/windows/overview_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/league_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/league_results_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/leagues_overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/leagues_overview_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/team_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/team_list_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz_manager.db" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_manager.db" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,42 +34,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gui/new_round_window.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/team_list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,7 +63,36 @@
       <find>new_butt</find>
       <find>heee</find>
       <find>emit</find>
+      <find>on_next</find>
+      <find>break</find>
+      <find>refre</find>
+      <find>sort</find>
+      <find>first_roun</find>
+      <find>first_round</find>
+      <find>connect</find>
+      <find>textChange</find>
+      <find>stret</find>
+      <find>pressed</find>
+      <find>sourceModel</find>
+      <find>get_team1</find>
+      <find>playoff</find>
+      <find>clicked.connect</find>
+      <find>Setting</find>
+      <find>select</find>
+      <find>SetLayout</find>
+      <find>import *</find>
+      <find>First</find>
+      <find>FirstRoundModel()</find>
+      <find>dataChange</find>
+      <find>pyqtSignal</find>
+      <find>PlayoffMode</find>
+      <find>import</find>
+      <find>layoutChanged</find>
+      <find>align</find>
     </findStrings>
+    <replaceStrings>
+      <replace>fr</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,25 +100,48 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/leagues_overview.py" />
-        <option value="$PROJECT_DIR$/db/models.py" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/gui/start_widget.py" />
         <option value="$PROJECT_DIR$/gui/dialogs.py" />
         <option value="$PROJECT_DIR$/gui/overview_window.py" />
-        <option value="$PROJECT_DIR$/gui/main_widget.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/gui/utils.py" />
-        <option value="$PROJECT_DIR$/gui/custom_widgets.py" />
+        <option value="$PROJECT_DIR$/gui/input_result.py" />
+        <option value="$PROJECT_DIR$/gui/main_widget.py" />
+        <option value="$PROJECT_DIR$/gui/input_result_window.py" />
         <option value="$PROJECT_DIR$/gui/new_round_window.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/gui/custom_widgets.py" />
+        <option value="$PROJECT_DIR$/gui/input_result_widget.py" />
+        <option value="$PROJECT_DIR$/gui/windows/__init__.py" />
+        <option value="$PROJECT_DIR$/models/leagues_overview.py" />
+        <option value="$PROJECT_DIR$/gui/windows/main_window.py" />
+        <option value="$PROJECT_DIR$/gui/windows/new_round_window.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/input_result_widget.py" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/team_chooser_widget.py" />
+        <option value="$PROJECT_DIR$/models/input_result.py" />
+        <option value="$PROJECT_DIR$/models/base_input_model.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/custom_widgets.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/first_round_input_widget.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/playoff_input_widget.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/__init__.py" />
+        <option value="$PROJECT_DIR$/db/models.py" />
+        <option value="$PROJECT_DIR$/models/playoff_input_model.py" />
+        <option value="$PROJECT_DIR$/models/first_round_input_model.py" />
+        <option value="$PROJECT_DIR$/models/final_round_input_model.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/final_round_input_widget.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/main_input_widget.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/main_widget.py" />
+        <option value="$PROJECT_DIR$/gui/windows/input_window.py" />
+        <option value="$PROJECT_DIR$/models/league_results.py" />
         <option value="$PROJECT_DIR$/models/team_list.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="1700" />
-    <option name="height" value="971" />
+    <option name="x" value="240" />
+    <option name="y" value="158" />
+    <option name="width" value="1440" />
+    <option name="height" value="791" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -116,6 +169,12 @@
             <path>
               <item name="quiz-manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="quiz-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quiz-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz-manager" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -132,10 +191,19 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gui/widgets" />
+      <recent name="$PROJECT_DIR$/gui/windows" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -219,22 +287,61 @@
       <workItem from="1575763959612" duration="4888000" />
       <workItem from="1575847359856" duration="3859000" />
       <workItem from="1575995786634" duration="8000" />
+      <workItem from="1576020817965" duration="1432000" />
+      <workItem from="1576191739094" duration="1423000" />
+      <workItem from="1576267293606" duration="2863000" />
+      <workItem from="1576939839757" duration="2978000" />
+      <workItem from="1577205437397" duration="10164000" />
+      <workItem from="1577402718367" duration="5081000" />
+      <workItem from="1577475653521" duration="1233000" />
+      <workItem from="1577618708632" duration="2713000" />
+      <workItem from="1578065166118" duration="650000" />
+      <workItem from="1578310640129" duration="7000" />
+      <workItem from="1578699505425" duration="925000" />
+      <workItem from="1581272321439" duration="920000" />
+      <workItem from="1584140668962" duration="108000" />
+      <workItem from="1585506582331" duration="2366000" />
+      <workItem from="1585551847215" duration="20000" />
+      <workItem from="1585759965712" duration="1031000" />
+      <workItem from="1585761446448" duration="85000" />
+      <workItem from="1585777377618" duration="2112000" />
+      <workItem from="1585811028860" duration="10000" />
+      <workItem from="1585865014463" duration="1321000" />
+      <workItem from="1585897321797" duration="6000" />
+      <workItem from="1585957565284" duration="2679000" />
+      <workItem from="1586019030261" duration="4818000" />
+      <workItem from="1586042168725" duration="9747000" />
+      <workItem from="1586172420405" duration="4862000" />
+      <workItem from="1586202627551" duration="2088000" />
+      <workItem from="1586250255418" duration="5000" />
+      <workItem from="1586298536867" duration="1214000" />
+      <workItem from="1586344299061" duration="5000" />
+      <workItem from="1586381089277" duration="3739000" />
+      <workItem from="1586415970382" duration="17000" />
+      <workItem from="1586460954672" duration="3339000" />
+      <workItem from="1586516441505" duration="6641000" />
+      <workItem from="1586556093852" duration="14966000" />
+      <workItem from="1586634725723" duration="4977000" />
+      <workItem from="1586688927128" duration="1348000" />
+      <workItem from="1586785058002" duration="526000" />
+      <workItem from="1588246457388" duration="1738000" />
+      <workItem from="1588576474165" duration="7000" />
+      <workItem from="1591304438503" duration="163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23606000" />
+    <option name="totallyTimeSpent" value="123933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26947704" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37459978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32969433" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4994664" weight="0.32969433" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49786553" weight="0.32969433" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -242,120 +349,252 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053364" side_tool="true" visible="true" weight="0.32969433" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32969433" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" x="0" y="0" width="430" height="853" id="Documentation" order="6" side_tool="true" weight="0.32977587" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/quiz_manager$init_db.coverage" NAME="init_db Coverage Results" MODIFIED="1575849597831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/quiz_manager$app.coverage" NAME="app Coverage Results" MODIFIED="1575934913988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/quiz_manager$init_db.coverage" NAME="init_db Coverage Results" MODIFIED="1586461749381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/quiz_manager$app.coverage" NAME="app Coverage Results" MODIFIED="1586563598087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/leagues_overview.py">
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1247971761/PyQt5/QtWidgets/QAbstractItemView.py" />
+    <entry file="file://$PROJECT_DIR$/gui/utils.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/lib/python3.8/site-packages/PyQt5/QtWidgets.pyi" />
+    <entry file="file://$PROJECT_DIR$/gui/windows/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="16" selection-end-line="56" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1247971761/PyQt5/QtWidgets/QAbstractItemView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5040">
-          <caret line="326" column="8" selection-start-line="326" selection-start-column="8" selection-end-line="326" selection-end-column="8" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="119">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/utils.py" />
-    <entry file="file://$PROJECT_DIR$/gui/custom_widgets.py">
+    <entry file="file://$PROJECT_DIR$/gui/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/windows/main_window.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/overview_window.py">
+    <entry file="file://$PROJECT_DIR$/gui/windows/overview_window.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/models.py">
+    <entry file="file://$PROJECT_DIR$/gui/widgets/custom_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/init_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-205">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui/main_widget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="100" column="28" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/python3.8/site-packages/PyQt5/QtCore.pyi" />
+    <entry file="file://$PROJECT_DIR$/gui/widgets/team_chooser_widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/widgets/playoff_input_widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1293">
+          <caret line="60" column="68" selection-start-line="60" selection-start-column="68" selection-end-line="60" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/widgets/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="134" selection-start-line="7" selection-start-column="134" selection-end-line="7" selection-end-column="134" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="94" column="42" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/widgets/main_input_widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/init_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/widgets/main_widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="100" column="31" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/base_input_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/widgets/first_round_input_widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" selection-start-line="27" selection-end-line="35" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/first_round_input_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/final_round_input_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/widgets/final_round_input_widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1247971761/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2270">
+          <caret line="5342" selection-start-line="5342" selection-end-line="5342" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/windows/input_window.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/new_round_window.py">
+    <entry file="file://$PROJECT_DIR$/models/league_results_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/leagues_overview_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/team_list.py">
+    <entry file="file://$PROJECT_DIR$/models/team_list_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+        <state relative-caret-position="323">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/playoff_input_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
         </state>
       </provider>
     </entry>

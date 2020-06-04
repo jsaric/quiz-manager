@@ -2,11 +2,9 @@ import typing
 
 from PyQt5.QtCore import *
 from db.models import *
-from peewee import *
-import config
 
 
-class TeamList(QAbstractListModel):
+class TeamListModel(QAbstractListModel):
     def __init__(self, league=None):
         super().__init__()
         self.league = league
@@ -44,6 +42,9 @@ class TeamList(QAbstractListModel):
         self._load_data()
         self._init_headers()
         self.layoutChanged.emit()
+
+    def get_team(self, index):
+        return self._teams[index]
 
     def add_team(self, team):
         self._teams.append(team)

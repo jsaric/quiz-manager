@@ -5,3 +5,4 @@ DATABASE = dir_path + "/quiz_manager.db"
 
 FIRST_PLACE_POINTS = 50
 TITLE = "Quiz Manager"
+ROUND_STRINGS = ["First Round", "Playoff", "Final Round"]

@@ -3,7 +3,7 @@ from db.models import *
 import config
 
 
-class LeagueResults(QAbstractTableModel):
+class LeagueResultsModel(QAbstractTableModel):
     def __init__(self, league: League):
         super().__init__()
         self.league = league
