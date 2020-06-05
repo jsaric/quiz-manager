@@ -11,5 +11,7 @@ class LeagueOverviewWindow(QMainWindow):
         self.setCentralWidget(self.table_view)
         self.table_view.resizeColumnsToContents()
         self.table_view.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        self.table_view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeToContents)
+        # self.table_view.horizontalHeader().setStretchLastSection(True)
         self.table_view.setSortingEnabled(True)
 

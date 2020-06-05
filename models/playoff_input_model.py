@@ -16,7 +16,12 @@ class PlayoffInputModel(QAbstractItemModel):
 
     def initiate_pairing(self):
         results = sorted(self.base_model.get_results(), key=lambda x: x[1].round_one_score, reverse=True)
-        for t, r in results[:len(results)//2]:
+        top_half = results[:len(results) // 2]
+        if len(results) % 2 == 1:
+            last_team_t = results.pop(-1)
+            top_half.append(last_team_t)
+
+        for t, r in top_half:
             pr = PlayoffResult.create(
                 team1=t,
                 team2=None,
@@ -31,6 +36,7 @@ class PlayoffInputModel(QAbstractItemModel):
         for t, r in results[len(results)//2:]:
             self.teams_left.append(t)
             self.teams_left_model.appendRow(QStandardItem(t.name))
+
         self.teams_split.emit()
         self.playoff_assign_index = 0
 

@@ -39,7 +39,7 @@ class LeagueResultsModel(QAbstractTableModel):
     def _init_headers(self):
         headers = ["Team"]
         for i in range(1, self._rounds + 1):
-            headers.append(f"Round {i}")
+            headers.append(f"R{i}")
         headers.append("Total")
         self._headers = headers
 
@@ -58,6 +58,9 @@ class LeagueResultsModel(QAbstractTableModel):
                 return sum(self._team_scores[r][1])
             else:
                 return self._team_scores[r][1][c-1]
+        elif role == Qt.TextAlignmentRole:
+            if index.column() >= 1:
+                return Qt.AlignCenter
 
     def headerData(self, section: int, orientation: Qt.Orientation, role: int = ...):
         if role != Qt.DisplayRole or orientation != Qt.Horizontal:

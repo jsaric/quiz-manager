@@ -156,10 +156,11 @@ class PlayoffPairWidget(QWidget):
         return layout, l_name, le_score, l_fscore
 
     def _pull_team_info(self, team_index):
-        self.name_labels[team_index].setText(self.model.get_name(team_index))
+        name = self.model.get_name(team_index)
+        self.name_labels[team_index].setText(name)
         self.score_edits[team_index].setText(str(self.model.get_score(team_index)))
         self.fscore_labels[team_index].setText(str(self.model.get_final_score(team_index)))
-        if not self.model.edit or self.model.finished:
+        if not self.model.edit or self.model.finished or name == "":
             self.score_edits[team_index].setDisabled(True)
         else:
             self.score_edits[team_index].setDisabled(False)
