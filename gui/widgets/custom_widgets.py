@@ -1,7 +1,11 @@
+import typing
+
 from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QDialog, QWidget, QLabel, QHBoxLayout, QLineEdit, QPushButton, QVBoxLayout
+from PyQt5.QtGui import QIntValidator
+from PyQt5.QtWidgets import QDialog, QWidget, QLabel, QHBoxLayout, QLineEdit, QPushButton, QVBoxLayout, QItemDelegate, \
+    QSpinBox
 
 __all__ = ["DialogWithDisablingOptions", "AddItemWidget", ]
 
@@ -89,3 +93,16 @@ class AddItemWidget(QWidget):
         else:
             self.edit.setStyleSheet("border: 1.5px solid green")
             self._available = True
+
+
+class ZeroMaxIntDelegate(QItemDelegate):
+    def __init__(self, parent, maxint):
+        super().__init__(parent)
+        self.maxint = maxint
+
+    def createEditor(self, parent, option, index):
+        qle = QLineEdit(parent)
+        qle.setValidator(QIntValidator(0, self.maxint, parent))
+        return qle
+
+

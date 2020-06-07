@@ -1,4 +1,7 @@
 from functools import partial
+
+from PyQt5.QtCore import QRegularExpression
+from PyQt5.QtGui import QIntValidator, QRegularExpressionValidator
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QListWidget, QListWidgetItem, QHBoxLayout, QLineEdit, \
     QListView, QPushButton, QMenu
 from PyQt5 import QtCore
@@ -141,6 +144,7 @@ class PlayoffPairWidget(QWidget):
         l_name = QLabel()
         le_score = QLineEdit()
         le_score.setAlignment(QtCore.Qt.AlignCenter)
+        le_score.setValidator(QRegularExpressionValidator(QRegularExpression("[0-8]"), le_score))
         l_fscore = QLabel()
         l_fscore.setAlignment(QtCore.Qt.AlignCenter)
         layout.addWidget(l_name)

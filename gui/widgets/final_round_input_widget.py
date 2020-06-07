@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QWidget, QTableView, QHeaderView, QPushButton, QVBoxLayout, QLabel
 from qtpy import QtCore
-
+from .custom_widgets import ZeroMaxIntDelegate
 import config
 
 
@@ -17,6 +17,7 @@ class FinalRoundInputWidget(QWidget):
         self.table_view.setModel(self.model)
         self.table_view.setSortingEnabled(True)
         self.table_view.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        self.table_view.setItemDelegateForColumn(2, ZeroMaxIntDelegate(self, 18))
 
         self.finish_button = QPushButton("Finish")
         self.finish_button.clicked.connect(self.finish)

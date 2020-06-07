@@ -1,5 +1,6 @@
-from PyQt5.QtWidgets import QWidget, QTableView, QHeaderView, QPushButton, QVBoxLayout, QLabel
+from PyQt5.QtWidgets import QWidget, QTableView, QHeaderView, QPushButton, QVBoxLayout, QLabel, QItemDelegate, QSpinBox
 from qtpy import QtCore
+from .custom_widgets import ZeroMaxIntDelegate
 
 import config
 
@@ -17,7 +18,7 @@ class FirstRoundInputWidget(QWidget):
         self.table_view.setModel(self.model)
         self.table_view.setSortingEnabled(True)
         self.table_view.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-
+        self.table_view.setItemDelegateForColumn(1, ZeroMaxIntDelegate(self, 37))
         self.advance_button = QPushButton("Advance")
         self.advance_button.clicked.connect(self.on_advance)
         layout.addWidget(self.label)
