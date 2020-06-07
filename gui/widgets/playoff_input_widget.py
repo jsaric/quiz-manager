@@ -144,7 +144,7 @@ class PlayoffPairWidget(QWidget):
         l_name = QLabel()
         le_score = QLineEdit()
         le_score.setAlignment(QtCore.Qt.AlignCenter)
-        le_score.setValidator(QRegularExpressionValidator(QRegularExpression("[0-8]"), le_score))
+        le_score.setValidator(QRegularExpressionValidator(QRegularExpression(f"[0-{config.MAX_PLAYOFF}]"), le_score))
         l_fscore = QLabel()
         l_fscore.setAlignment(QtCore.Qt.AlignCenter)
         layout.addWidget(l_name)

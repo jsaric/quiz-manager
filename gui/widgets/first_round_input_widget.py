@@ -18,7 +18,7 @@ class FirstRoundInputWidget(QWidget):
         self.table_view.setModel(self.model)
         self.table_view.setSortingEnabled(True)
         self.table_view.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        self.table_view.setItemDelegateForColumn(1, ZeroMaxIntDelegate(self, 37))
+        self.table_view.setItemDelegateForColumn(1, ZeroMaxIntDelegate(self, config.MAX_FIRST_ROUND))
         self.advance_button = QPushButton("Advance")
         self.advance_button.clicked.connect(self.on_advance)
         layout.addWidget(self.label)

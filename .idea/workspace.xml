@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32e2eb19-ada0-43bf-991a-24f13ad1a5ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/widgets/custom_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/widgets/custom_widgets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/widgets/final_round_input_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/widgets/final_round_input_widget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/widgets/first_round_input_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/widgets/first_round_input_widget.py" afterDir="false" />
@@ -58,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/widgets/first_round_input_widget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+            <state relative-caret-position="152">
+              <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
               <folding>
                 <element signature="e#0#119#0" expanded="true" />
               </folding>
@@ -79,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gui/widgets/playoff_input_widget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="156" column="39" lean-forward="true" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
+            <state relative-caret-position="526">
+              <caret line="146" column="101" selection-start-line="146" selection-start-column="101" selection-end-line="146" selection-end-column="101" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -91,14 +92,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/widgets/final_round_input_widget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="323">
+              <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -162,7 +172,6 @@
         <option value="$PROJECT_DIR$/gui/main_widget.py" />
         <option value="$PROJECT_DIR$/gui/input_result_window.py" />
         <option value="$PROJECT_DIR$/gui/new_round_window.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/gui/custom_widgets.py" />
         <option value="$PROJECT_DIR$/gui/input_result_widget.py" />
         <option value="$PROJECT_DIR$/gui/windows/__init__.py" />
@@ -186,10 +195,11 @@
         <option value="$PROJECT_DIR$/models/league_results_model.py" />
         <option value="$PROJECT_DIR$/gui/windows/overview_window.py" />
         <option value="$PROJECT_DIR$/db/models.py" />
-        <option value="$PROJECT_DIR$/gui/widgets/first_round_input_widget.py" />
         <option value="$PROJECT_DIR$/gui/widgets/custom_widgets.py" />
-        <option value="$PROJECT_DIR$/gui/widgets/final_round_input_widget.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/first_round_input_widget.py" />
         <option value="$PROJECT_DIR$/gui/widgets/playoff_input_widget.py" />
+        <option value="$PROJECT_DIR$/gui/widgets/final_round_input_widget.py" />
       </list>
     </option>
   </component>
@@ -390,18 +400,18 @@
       <workItem from="1588576474165" duration="7000" />
       <workItem from="1591304438503" duration="1893000" />
       <workItem from="1591352093713" duration="3226000" />
-      <workItem from="1591562442817" duration="3900000" />
+      <workItem from="1591562442817" duration="4078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132789000" />
+    <option name="totallyTimeSpent" value="132967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2854856" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2854856" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -447,13 +457,6 @@
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -632,16 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/widgets/first_round_input_widget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gui/widgets/custom_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -652,22 +645,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/widgets/playoff_input_widget.py">
+    <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="156" column="39" lean-forward="true" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
+        <state relative-caret-position="187">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/widgets/first_round_input_widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gui/widgets/final_round_input_widget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="323">
+          <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/widgets/playoff_input_widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="146" column="101" selection-start-line="146" selection-start-column="101" selection-end-line="146" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>

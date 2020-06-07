@@ -17,7 +17,7 @@ class FinalRoundInputWidget(QWidget):
         self.table_view.setModel(self.model)
         self.table_view.setSortingEnabled(True)
         self.table_view.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        self.table_view.setItemDelegateForColumn(2, ZeroMaxIntDelegate(self, 18))
+        self.table_view.setItemDelegateForColumn(2, ZeroMaxIntDelegate(self, config.MAX_FINAL_ROUND))
 
         self.finish_button = QPushButton("Finish")
         self.finish_button.clicked.connect(self.finish)
