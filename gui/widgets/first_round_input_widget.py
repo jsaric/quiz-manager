@@ -1,3 +1,4 @@
+from PyQt5.QtCore import QSortFilterProxyModel
 from PyQt5.QtWidgets import QWidget, QTableView, QHeaderView, QPushButton, QVBoxLayout, QLabel, QItemDelegate, QSpinBox
 from qtpy import QtCore
 from .custom_widgets import ZeroMaxIntDelegate
@@ -6,7 +7,7 @@ import config
 
 
 class FirstRoundInputWidget(QWidget):
-    def __init__(self, parent, model):
+    def __init__(self, parent, model: QSortFilterProxyModel):
         super().__init__(parent)
         self.model = model
         layout = QVBoxLayout(self)
@@ -26,7 +27,12 @@ class FirstRoundInputWidget(QWidget):
         layout.addWidget(self.advance_button)
 
     def on_advance(self):
-        self.model.sourceModel().finish()
+        try:
+            # pass
+            self.model.sourceModel().finish()
+            self.model.sourceModelChanged.emit()
+        except Exception as e:
+            print(e)
         self.table_view.sortByColumn(1, QtCore.Qt.DescendingOrder)
         self.table_view.setSortingEnabled(False)
         self.layout().removeWidget(self.advance_button)

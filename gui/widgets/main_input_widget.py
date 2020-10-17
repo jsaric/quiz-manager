@@ -33,7 +33,6 @@ class MainInputWidget(QWidget):
 
     def finish_playoff(self):
         self.final_round_model.sort(1, QtCore.Qt.DescendingOrder)
-        self.final_round_model.sourceModel().refresh()
 
     def finish(self):
         for t, r in self.base_model.get_results():

@@ -49,11 +49,6 @@ class FirstRoundModel(QAbstractTableModel):
 
     def finish(self):
         self.finished = True
-        self.refresh()
-
-    def refresh(self):
-        self._init_headers()
-        self.layoutChanged.emit()
 
     def flags(self, index: QModelIndex) -> Qt.ItemFlags:
         if index.column() == 1:
